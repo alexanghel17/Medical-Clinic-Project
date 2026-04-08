@@ -40,8 +40,8 @@ The project follows a distributed microservices-like pattern:
 ### Instructions
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/Clinica-Project.git](https://github.com/YOUR_USERNAME/Clinica-Project.git)
-    cd Clinica-Project
+    git clone [https://github.com/alexanghel17/Medical-Clinic-Project.git](https://github.com/alexanghel17/Medical-Clinic-Project.git)
+    cd Medical-Clinic-Project
     ```
 2.  **Start the system:**
     ```bash
