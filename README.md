@@ -1,8 +1,8 @@
-# Clinica: Healthcare Management System – Digital Simulation
+# Medical Clinic-Project
 
 This repository contains a Software Engineering university project following a full development pipeline, from requirements engineering and database modeling to a containerized network deployment. The project focuses on the digital recreation of a medical clinic's workflow, bridging the gap between complex healthcare logic and a scalable, Client-Server architecture.
 
-## What is Clinica?
+## How does the application work?
 
 The application is a distributed management system where patients and doctors interact through a secure TCP/IP socket connection. Unlike a simple local app, this project simulates a real-world environment where data persistence is handled by an ORM-mapped PostgreSQL database, ensuring that medical records, appointments, and treatments are stored reliably and accessible concurrently.
 
