@@ -12,7 +12,7 @@ public class Main {
         SocketClient client = new SocketClient();
         MainMeniu meniuPrincipal = new MainMeniu();
 
-        client.startConnection("127.0.0.1", 5555);
+        client.startConnection("server", 1234);
         System.out.println("Connected to server.");
 
             meniuPrincipal.showMeniu(client);

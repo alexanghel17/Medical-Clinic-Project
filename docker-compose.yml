@@ -1,0 +1,39 @@
+services:
+  # Baza de date PostgreSQL
+  db:
+    image: postgres:16
+    container_name: clinica-db
+    environment:
+      POSTGRES_DB: clinica_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    networks:
+      - clinica-net
+
+  # Serverul Java
+  server:
+    build: ./CLINICA-Server
+    container_name: clinica-server
+    depends_on:
+      - db
+    ports:
+      - "1234:1234"
+    networks:
+      - clinica-net
+
+  # Clientul Java
+  client:
+    build: ./CLINICA-Client
+    container_name: clinica-client
+    stdin_open: true # Necesar pentru meniuri interactive
+    tty: true        # Necesar pentru consola Java
+    depends_on:
+      - server
+    networks:
+      - clinica-net
+
+networks:
+  clinica-net:
+    driver: bridge
